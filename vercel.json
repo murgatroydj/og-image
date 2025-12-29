@@ -1,9 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
-    { "source": "/", "destination": "https://og-img.hollerdigital.dev" }
-  ],
-  "rewrites": [
-    { "source": "/(.+)", "destination": "/api" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/$1" }]
 }
